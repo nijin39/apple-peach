@@ -1,0 +1,33 @@
+#### 주문
+POST http://localhost:8080/orders?item=coffee&orderedBy=Haksung
+Accept: application/json
+
+#### 리스트
+GET http://localhost:8080/orders?orderedBy=Haksung
+Accept: application/json
+
+#### 취소
+PUT http://localhost:8080/orders/15/cancel
+Accept: application/json
+
+#### 취소
+GET http://localhost:8080/order/health
+Accept: application/json
+
+### 오더생성
+POST http://localhost:8080/order/placeOrder
+Content-Type: application/json
+
+{
+  "orderName": "myorder"
+}
+
+### 오더생성 오류
+POST http://localhost:8080/order/placeOrder
+Content-Type: application/json
+
+{
+"orderName": "002"
+}
+
+

@@ -1,0 +1,5 @@
+rootProject.name = 'order'
+include ':interfaces'
+include ':application'
+include ':domain'
+include ':infrastructure'
